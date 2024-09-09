@@ -95,7 +95,7 @@ li {
 .brdr {
   border: solid 2px #970747;
 }
-
+ /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                    PAGE CATEGORIE                         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 .fond11 {
   background-image: url(images_the_district/food/Food-Name-8298.jpg);
   background-size: cover;
@@ -118,7 +118,7 @@ li {
 }
 
 .fond13 {
-  background-image: url(images_the_district/category/pasta_cat.jpg);
+  background-image: url(images_the_district/category/asian_food_cat.jpg);
   background-size: cover;
   height: 500px;
   width: 100%;
@@ -150,6 +150,15 @@ li {
 
 .fond16 {
   background-image: url(images_the_district/category/salade_cat.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-position-y: 50%;
+  border: solid 2px #970747;
+  background-repeat: no-repeat;
+}
+.fond17 {
+  background-image: url(images_the_district/category/pasta_cat.jpg);
   background-size: cover;
   height: 500px;
   width: 100%;
