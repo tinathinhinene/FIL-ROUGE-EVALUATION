@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,30 +12,34 @@
     <link rel="stylesheet" href="../style.css">
     <title>accueil🍽️</title>
 </head>
-
+<!--
 <body class=" bg-dark text-white">
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/index.html"><img src="../images_the_district/the_district_brand/logo.png"
+            <a class="navbar-brand" href=".. php/index php"><img src="../images_the_district/the_district_brand/logo.png"
                     style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href=".. php/index php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href=".. php/catégorie php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href=".. php/plats php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href=".. php/contact php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
     </nav>
 
+-->
+<div class="menu">
+<?php include 'menu.php';?>
+</div>
 
     <div class="fond container-fluid m-0 p-0 d-flex align-items-center">
         <div class="content p-5">
@@ -109,4 +113,4 @@
 </footer>
 </body>
 
-</html>
+<html>

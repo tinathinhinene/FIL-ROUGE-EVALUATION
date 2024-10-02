@@ -15,27 +15,31 @@
 
 <body>
     <!--""""""""""""""""""""""""""""""""""""""""""adresse logo menu"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+    <!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/nindex.html"><img src="../images_the_district/the_district_brand/logo.png"
+            <a class="navbar-brand" href="../php/nindex.php"><img src="../images_the_district/the_district_brand/logo.png"
                     style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/index.php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/catégorie.php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/plats.php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/contact.php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
+    <div class="menu">
+<?php include 'menu.php';?>
+</div>
 <!--"""""""""""""""""""""""""""""""""""""""""image de fond barre de recherche"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
     <div class="fond container-fluid m-0 p-0 d-flex align-items-center">
@@ -59,7 +63,7 @@
             <h4 class="hawa card-title m-0 pb-3">PIZZA margarita</h4>
             <P CLASS="ctext card-text mt-2 pb-2"> une recette  de cuisine traditionnelle de la cuisine italienne, originaire de Naples à  base de galette de pâte à pain, garnie principalement d'huile d'olive,  de sauce tomate, de mozzarella et d'autres ingrédients et cuite au four.La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est garnie de tomates, de mozzarella, de basilic frais, de sel et d'huile d'olive. La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est garnie de tomates
             </P>
-           <a href="pizzamargaritacommande.html" class="command btn m-3">COMMANDER</a>       
+           <a href="pizzamargaritacommande.php" class="command btn m-3">COMMANDER</a>       
         </div>
         </div>
 <!--""""""""""""""""""""""""""""""""""""""""""card WRAPES mexicaines""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
@@ -99,8 +103,8 @@
 
 
   <div class="container-fluid d-flex justify-content-around p-5"> 
-    <a href="../html/pizzas plat.html"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-      <a href="../html/contact.html"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
+    <a href="../php/pizzas plat.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+      <a href="../php/contact.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
   </div>
 
   <!--""""""""""""""""""""""""""""""""""""""""""contact""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->

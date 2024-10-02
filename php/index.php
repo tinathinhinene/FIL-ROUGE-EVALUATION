@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +9,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        
     <link rel="stylesheet" href="../style.css">
     <title>accueil🍽️</title>
 </head>
 
 <body>
    <!--''''''''''''''''''''''''''' l'adresse le logo et la barre de nav'''''''''''''''''''''''''''''''''''''''''-->
-
+<!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand justify-content-center">
         <div class="contenair-fluid">
-            <a class=" navbar-brand" href="../html/nindex.html"><img class="log"
+            <a class=" navbar-brand" href=".. php/nindex php"><img class="log"
                     src="../images_the_district/the_district_brand/logo.png"></a>
         </div>
     </nav>
@@ -29,14 +30,17 @@
         <ul class="navbar-nav col d-flex justify-content-around">
             <li class="assieta d-flex justify-content-center align-items-center"><a href="#"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="assieta d-flex justify-content-center align-items-center"><a href="catégorie.html"
+            <li class="assieta d-flex justify-content-center align-items-center"><a href="catégorie php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="assieta d-flex justify-content-center align-items-center"><a href="plats.html"
+            <li class="assieta d-flex justify-content-center align-items-center"><a href="plats php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="assieta d-flex justify-content-center align-items-center"><a href="contact.html"
+            <li class="assieta d-flex justify-content-center align-items-center"><a href="contact php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
+    <div class="menu">
+<?php include 'menu.php';?>
+</div>
 <!--''''''''''''''''''''''''''' video avec barre de recherche'''''''''''''''''''''''''''''''''''''''''''''-->
     <div class="vii">
         <figure>
@@ -51,42 +55,46 @@
 <!-- """"""""""""""""""""""""""""" trois premiere images"""""""""""""""""""""""""""""""""-->
 <div class="grddi container-fluid p-2 ">
     <div class=" row">
-              <div class="col d-flex justify-content-around"><a href="catégorie.html#veggie"><img
+              <div class="col d-flex justify-content-around"><a href="catégorie php#veggie"><img
                     src="../images_the_district/category/salade_cat.jpg" class="ra" class="rounded border border-4"
-                    alt="veggie"></a> </div><p class="nomdeplat1"><a href="catégorie.html#veggie">VEGGIE</a></p>
-        <div class=" col d-flex justify-content-around"><a href="catégorie.html#asian"><img
+                    alt="veggie"></a> </div><p class="nomdeplat1"><a href="catégorie php#veggie">VEGGIE</a></p>
+        <div class=" col d-flex justify-content-around"><a href="catégorie php#asian"><img
                     src="../images_the_district/category/asian_food_cat.jpg" class="ra"
-                    class="rounded border border-4" alt="asian food"></a></div><p class="nomdeplat1"><a href="catégorie.html#asian">ASIAN FOOD</a></p>
-        <div class="col d-flex justify-content-around"><a href="catégorie.html#pasta"><img
+                    class="rounded border border-4" alt="asian food"></a></div><p class="nomdeplat1"><a href="catégorie php#asian">ASIAN FOOD</a></p>
+        <div class="col d-flex justify-content-around"><a href="catégorie php#pasta"><img
                     src="../images_the_district/category/pasta_cat.jpg" class="ra" class="rounded border border-4"
-                    alt="pasta"></a></div> <p class="nomdeplat1"><a href="catégorie.html#pasta">PASTA</a></p>
+                    alt="pasta"></a></div> <p class="nomdeplat1"><a href="catégorie php#pasta">PASTA</a></p>
     </div>
 </div>
 <!-- ''''''''''''''''''''''''''''''les noms des trois premieres images'''''''''''''''''''''''-->
 <div class="container-fluid d-flex justify-content-around">
-    <p class="nomdeplat"> <a href="catégorie.html#veggie">VEGGIE</a></p>
-    <p class="nomdeplat"><a href="catégorie.html#asian">ASIAN FOOD</a></p>
-    <p class="nomdeplat"><a href="catégorie.html#pasta">PASTA</a></p>
+    <p class="nomdeplat"> <a href="catégorie php#veggie">VEGGIE</a></p>
+    <p class="nomdeplat"><a href="catégorie php#asian">ASIAN FOOD</a></p>
+    <p class="nomdeplat"><a href="catégorie php#pasta">PASTA</a></p>
 </div>
 <!-- """"""""""""""""""""""""""""" trois  images suivantes""""""""""""""------------------->
+ <!--
     <div class="grddi container-fluid pb-2 pt-3">
         <div class="row ">
-            <div class=" col d-flex justify-content-around"><a href="catégorie.html#pizza"><img
+            <div class=" col d-flex justify-content-around"><a href="catégorie php#pizza"><img
                         src="../images_the_district/category/pizza_cat.jpg" class="ra" class=" rounded border border-4"
-                        alt="pizza"></a></div>  <p class="nomdeplat1"><a href="catégorie.html#pizza">PIZZA</a></p>
-            <div class=" col d-flex justify-content-around"><a href="catégorie.html#hamburger"><img
+                        alt="pizza"></a></div>  <p class="nomdeplat1"><a href="catégorie php#pizza">PIZZA</a></p>
+            <div class=" col d-flex justify-content-around"><a href="catégorie php#hamburger"><img
                         src="../images_the_district/category/burger_cat.jpg" class="ra" class="rounded border border-4"
-                        alt="burger"></a></div><p class="nomdeplat1"><a href="catégorie.html#hamburger">BURGER</a></p>
-            <div class=" col d-flex justify-content-around"><a href="catégorie.html#sandwich"><img
+                        alt="burger"></a></div><p class="nomdeplat1"><a href="catégorie php#hamburger">BURGER</a></p>
+            <div class=" col d-flex justify-content-around"><a href="catégorie php#sandwich"><img
                         src="../images_the_district/category/sandwich_cat.jpg" class="ra"
-                        class="rounded border border-4" alt="sandwich"></a></div> <p class="nomdeplat1"><a href="catégorie.html#sandwich">SANDWICH</a></p>
+                        class="rounded border border-4" alt="sandwich"></a></div> <p class="nomdeplat1"><a href="catégorie php#sandwich">SANDWICH</a></p>
         </div>
-    </div>
+    </div> -->
+    <div class="menu">
+        <?php include 'menu.php';?>
+</div>
 <!-- ''''''''''''''''''''''''''''''les noms des trois images suivantes''''''''''''''''-->
     <div class="cen container-fluid d-flex justify-content-around ms-0 me-0 pe-0 ps-0">
-        <p class="nomdeplat"><a href="catégorie.html#pizza">PIZZA</a></p>
-        <p class="nomdeplat"><a href="catégorie.html#hamburger">BURGER</a></p>
-        <p class="nomdeplat"><a href="catégorie.html#sandwich">SANDWICH</a></p>
+        <p class="nomdeplat"><a href="catégorie php#pizza">PIZZA</a></p>
+        <p class="nomdeplat"><a href="catégorie php#hamburger">BURGER</a></p>
+        <p class="nomdeplat"><a href="catégorie php#sandwich">SANDWICH</a></p>
     </div>
 <!--''''''''''''''''''''''''''''''''''''''telechargement du menu ''''''''''''''''''''''''''''''''''''''''''-->
 <div class="tele p-4">
@@ -113,7 +121,7 @@
         <div class="co container-fluid d-flex justify-content-center pt-4">
            
 <!--""""""""""""""""""""""""""""contact"""""""""""""""""""""""""""""""""""""""""""""""""-->
-            <p><a href="contact.html">CONTACT</p>
+      <!--      <p><a href="contact php">CONTACT</p>
         </div>
 
         <nav class="navbar navbar-expand ">
@@ -133,7 +141,9 @@
             </ul>
         </nav>
     </section>
-
+                -->
+    
+    <?php include 'footer.php' ;?> 
 </body>
 
-</html>
+<html>

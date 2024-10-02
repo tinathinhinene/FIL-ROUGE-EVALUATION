@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 
 <head>
@@ -15,28 +15,31 @@
 
 <body>
     <!-- ''''''''''''''''        '''''''''adresse du restaurant logo et menu du restaurant'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
+<!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/nindex.html"><img
+            <a class="navbar-brand" href="../php/nindex.php"><img
                     src="../images_the_district/the_district_brand/logo.png" style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/index.php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/catégorie.php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/plats.php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/contact.php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
-    </nav>
+    </nav> -->
+    <div class="menu">
+<?php include 'menu.php';?>
+</div>
     <!--''''''''''''''''''''''''''''''''''''''image de fond et barre de recherche'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
     <div class="fond container-fluid m-0 p-0 d-flex align-items-center">
         <div class="content p-5">
@@ -51,14 +54,14 @@
         <p class="nomdeplat  p-4 m-4">LES CATEGORIES</p>
     </div>
 
-    <a href="pizzas plat.html">
+    <a href="pizzas plat.p">
         <div class="fond11 mb-4">
             <p class="non1 pt-5 mt-5" id="pizza">PIZZA</p>
         </div>
     </a>
     <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
-    <a href="burgerplat.html">
+    <a href="burgerplat.p">
         <div class="fond12 mb-4" id="hamburger">
             <p class="non1 pt-5 mt-5">HAMBURGER</p>
         </div>
@@ -80,7 +83,7 @@
     </div>
     <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
-    <a href="pastaplat.html">
+    <a href="pastaplat.p">
         <div class="fond17 " id="pasta">
             <p class="non1 pt-5 mt-5">PASTA</p>
         </div>
@@ -89,13 +92,13 @@
     <!--'''''''''''''''''''''''''''''''''''''''''les boutons gauche et droite''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
     <div class="container-fluid d-flex justify-content-around p-4">
-        <a href="../html/index.html"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px" ,
+        <a href="../ph/index.ph"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px" ,
                 width="70px"> </a>
-        <a href="../html/pizzas plat.html"> <img src="../images_the_district/envoyer.png" alt="bouton droite"
+        <a href="../ph/pizzas plat.ph"> <img src="../images_the_district/envoyer.png" alt="bouton droite"
                 height="70px" , width="70px">
     </div>
     <!--'''''''''''''''''''''''''''''''''''''''contact'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-    
+    <!--
     <section class="brdr pb-4">
         <div class="co container-fluid d-flex justify-content-center pt-4">
             <p>CONTACT</p>
@@ -117,7 +120,8 @@
                             width="50px" height="50px"></a></li>
             </ul>
         </nav>
-    </section>
+    </section> -->
+    <?php include 'footer.php' ;?> 
 </body>
 
 </html>

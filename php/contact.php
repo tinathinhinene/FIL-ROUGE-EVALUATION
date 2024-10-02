@@ -15,28 +15,31 @@
 
 <body>
      <!--""""""""""""""""""""""""""""""""""""""""""adresse logo menu"""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
-
+<!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/nindex.html"><img src="../images_the_district/the_district_brand/logo.png"
+            <a class="navbar-brand" href="../php/nindex.php"><img src="../images_the_district/the_district_brand/logo.png"
                     style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/index.php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/catégorie.php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/plats.php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/contact.php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
-    </nav>
+    </nav> --> 
+     <div class="menu">
+<?php include 'menu.php';?>
+</div>
 
  <!--""""""""""""""""""""""""""""""""""""""""""image de fond barre de recherche""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
@@ -94,12 +97,12 @@
  <!--""""""""""""""""""""""""""""""""""""""""""bouton droit gauche""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
         <div class="container-fluid d-flex justify-content-around p-5"> 
-            <a href="plats.html"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-              <a href="../html/contact.html"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
+            <a href="plats.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+              <a href="../php/contact.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
           </div>
 
     <!--""""""""""""""""""""""""""""""""""""""""""contact""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
-       
+       <!--
           <section class="brdr pb-4">
          <div class="co container-fluid d-flex justify-content-center pt-4">
            
@@ -117,6 +120,7 @@
                                 class="contact"><img src="../images_the_district/tic-tac.png" class="reseaux w-2" alt="logo facebook" width="50px" height="50px"></a></li>
                     </ul>
                 </nav>
-          </section>
+          </section> -->
+            <?php include 'footer.php' ;?> 
         </body>
-        </html>
+</html>

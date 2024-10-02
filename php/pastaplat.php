@@ -14,28 +14,32 @@
 </head>
 
 <body>
+    <!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/nindex.html"><img src="../images_the_district/the_district_brand/logo.png"
+            <a class="navbar-brand" href="../php/nindex.php"><img src="../images_the_district/the_district_brand/logo.png"
                     style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/index.php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/catégorie.php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/plats.php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/contact.php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
     </nav>
-
+-->
+<div class="menu">
+<?php include 'menu.php';?>
+</div>
 
     <div class="fond111 container-fluid m-0 p-0 d-flex align-items-center">
         <div class="content p-5">
@@ -71,7 +75,7 @@
             <P CLASS="ctext card-text mt-2 pb-2">pâtes en une grande quantité d'eau salée bouillante. Entre-temps étuver l'oignon avec 20 gr de beurre et une petite cuillère de sucre, en ajoutant de l'eau à la fin de la cuisson. Passer le mélange au mixeur avec la crème fraîche et ajouter le sel si nécessaire.
                 Rissoler en une poêle grande les lardons fumés avec une noix de beurre, ajouter la crème d'oignon et faire sauter avec les pâtes al dente.
                 Servir les spaghetti avec les lardons fumés et ajouter une bonne quantité de poivre..</P>
-           <a href="pizzamargaritacommande.html" class="command btn m-3">COMMANDER</a>       
+           <a href="pizzamargaritacommande.php" class="command btn m-3">COMMANDER</a>       
         </div>
         </div>
 
@@ -106,11 +110,11 @@
 
 
   <div class="container-fluid d-flex justify-content-around p-5"> 
-    <a href="../html/plats par catégorie.html"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-      <a href="../html/plats.html"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="77px", width="77px">
+    <a href="../php/plats par catégorie.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+      <a href="../php/plats.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="77px", width="77px">
   </div>
        
-  
+  <!--
   <section class="brdr pb-4">
  <div class="co container-fluid d-flex justify-content-center pt-4">
    
@@ -129,6 +133,7 @@
                         class="contact"><img src="../images_the_district/tic-tac.png" class="reseaux w-2" alt="logo facebook" width="50px" height="50px"></a></li>
             </ul>
         </nav>
-  </section>
+  </section> -->
+  <?php include 'footer.php' ;?> 
 </body>
 </html>

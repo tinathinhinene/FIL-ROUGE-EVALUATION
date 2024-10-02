@@ -15,28 +15,29 @@
 
 <body>
     <!-- """"""""""""""""""""""""""""""""""""""""menu adresse logo"""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+     <!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">
         <div class="contenair-fluid">
-            <a class="navbar-brand" href="../html/nindex.html"><img src="../images_the_district/the_district_brand/logo.png"
+            <a class="navbar-brand" href="../php/nindex.php"><img src="../images_the_district/the_district_brand/logo.png"
                     style="width:200px" ; height="126px"></a>
         </div>
     </nav>
 
     <nav class="navbar navbar-expand-lg">
         <ul class="navbar-nav col d-flex justify-content-around">
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/index.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/index.php"
                     class="text-decoration-none text-dark">Accueil</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/catégorie.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/catégorie.php"
                     class="text-decoration-none text-dark">Catégorie</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/plats.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/plats.php"
                     class="text-decoration-none text-dark">Plats</a></li>
-            <li class="d-flex justify-content-center align-items-center"><a href="../html/contact.html"
+            <li class="d-flex justify-content-center align-items-center"><a href="../php/contact.php"
                     class="text-decoration-none text-dark">Contact</a></li>
         </ul>
     </nav>
-
+-->
 <!--"""""""""""""""""""""""""""""""""""""""""""image de fond et barre de recherche"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
     <div class="fond container-fluid m-0 p-0 d-flex align-items-center">
@@ -72,7 +73,7 @@
         <div class="pizzatext card-body ms-5 mt-0 p-5">
             <h4 class="hawa card-title m-0 pb-3">PIZZA MARGARITA</h4>
             <P CLASS="ctext card-text mt-2 pb-2">La pizza margherita est une spécialité culinaire  traditionnelle de la ville de Naples, en Italie. Très populaire, cette  pizza napoletana est garnie de tomates, de mozzarella, de basilic frais,  de sel et d'huile d'olive. La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est garnie de tomates, de mozzarella, de basilic frais, de sel et d'huile d'olive. Les couleurs de ces trois premiers ingrédients sont celles du drapeau italien</P>
-           <a href="pizzamargaritacommande.html" class="command btn m-3">COMMANDER</a>       
+           <a href="pizzamargaritacommande.php" class="command btn m-3">COMMANDER</a>       
         </div>
         </div>
 
@@ -103,13 +104,14 @@
 
 <!--''''''''''''''''''''''''''''''''''''''''''''''''bouton gauche droit"""""""""""""""""""""""""""""""""""""""""-->
   <div class="container-fluid d-flex justify-content-around p-5"> 
-    <a href="../html/catégorie.html"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-      <a href="../html/plats.html"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
+    <a href="../php/catégorie.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+      <a href="../php/plats.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
   </div>
        
 
 <!--''''''''''''''''''''''''''''''''''''''''''''''''contact """""""""""""""""""""""""""""""""""""""""-->   
-  <section class="brdr pb-4">
+ <!--
+<section class="brdr pb-4">
  <div class="co container-fluid d-flex justify-content-center pt-4">
    
     <p>CONTACT</p>
@@ -127,6 +129,7 @@
                         class="contact"><img src="../images_the_district/tic-tac.png" class="reseaux w-2" alt="logo facebook" width="50px" height="50px"></a></li>
             </ul>
         </nav>
-  </section>
+  </section> -->
+  <?php include 'footer.php' ;?> 
 </body>
-</html>
+<html>
