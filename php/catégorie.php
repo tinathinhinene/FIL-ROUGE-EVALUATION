@@ -54,14 +54,14 @@
         <p class="nomdeplat  p-4 m-4">LES CATEGORIES</p>
     </div>
 
-    <a href="pizzas plat.p">
+    <a href="pizzas_plat.php">
         <div class="fond11 mb-4">
             <p class="non1 pt-5 mt-5" id="pizza">PIZZA</p>
         </div>
     </a>
     <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
-    <a href="burgerplat.p">
+    <a href="burger_plat.php">
         <div class="fond12 mb-4" id="hamburger">
             <p class="non1 pt-5 mt-5">HAMBURGER</p>
         </div>
@@ -83,7 +83,7 @@
     </div>
     <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
-    <a href="pastaplat.p">
+    <a href="pasta_plat.php">
         <div class="fond17 " id="pasta">
             <p class="non1 pt-5 mt-5">PASTA</p>
         </div>
@@ -92,10 +92,10 @@
     <!--'''''''''''''''''''''''''''''''''''''''''les boutons gauche et droite''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
     <div class="container-fluid d-flex justify-content-around p-4">
-        <a href="../ph/index.ph"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px" ,
+        <a href="index.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px" ,
                 width="70px"> </a>
-        <a href="../ph/pizzas plat.ph"> <img src="../images_the_district/envoyer.png" alt="bouton droite"
-                height="70px" , width="70px">
+        <a href="pizzas_plat.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite"
+                height="70px" , width="70px"></a>
     </div>
     <!--'''''''''''''''''''''''''''''''''''''''contact'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
     <!--

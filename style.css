@@ -477,23 +477,23 @@ text-align: center;
 }
 /**********************************************************contact*************************************************************************/
 #ville, #codepostal{
-padding: 20px 600px;
+
 border:#970747 solid 4px;
 border-radius: 15px;
-width: 600px;
+width: 100%;
 }
 #comment{
-padding: 60px 600px;
+
 border:#970747 solid 4px;
 border-radius: 15px;
-width:600px;
+width:98%;
 
 }
-#email, #telephone, #nom{
-padding: 20px 250px;
+#email, #telephone, #nom, #prenom{
+
 border:#970747 solid 4px;
 border-radius: 15px;
-width: 550px;
+width: 100%;
 
 }
 form{

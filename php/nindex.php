@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>accueil🍽️</title>
 </head>
-<!--
-<body class=" bg-dark text-white">
+<body class=" bg-dark text-white"><!--
     <p class="p1 d-flex justify-content-center">Restaurant The District 30 Rue de Poulainville, 80000 Amiens</p>
 
     <nav class="navbar navbar-expand-sm justify-content-center">

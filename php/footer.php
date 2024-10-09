@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
 echo '<section class="brdr pb-4">
          <div class="co container-fluid d-flex justify-content-center pt-4">
@@ -21,5 +17,3 @@ echo '<section class="brdr pb-4">
                 </nav>
           </section>';
           ?>
-                </body>
-          <html>

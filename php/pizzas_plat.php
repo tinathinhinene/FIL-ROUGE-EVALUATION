@@ -104,8 +104,8 @@
 
 <!--''''''''''''''''''''''''''''''''''''''''''''''''bouton gauche droit"""""""""""""""""""""""""""""""""""""""""-->
   <div class="container-fluid d-flex justify-content-around p-5"> 
-    <a href="../php/catégorie.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-      <a href="../php/plats.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
+    <a href="catégorie.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+      <a href="plats.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px"></a>
   </div>
        
 

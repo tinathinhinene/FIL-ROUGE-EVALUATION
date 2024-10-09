@@ -103,8 +103,8 @@
 
 
   <div class="container-fluid d-flex justify-content-around p-5"> 
-    <a href="../php/pizzas plat.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
-      <a href="../php/contact.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px">
+    <a href="pizzas_plat.php"> <img src="../images_the_district/gauche.png" alt="bouton gauche" height="70px", width="70px"> </a>       
+      <a href="contact.php"> <img src="../images_the_district/envoyer.png" alt="bouton droite" height="70px", width="70px"></a>
   </div>
 
   <!--""""""""""""""""""""""""""""""""""""""""""contact""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
