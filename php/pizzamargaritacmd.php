@@ -25,35 +25,36 @@
             </div>
         </div>
     </div>
-
+<br><br>
     <!--"""""""""""""""""""""""""""""""""""""""formulaire"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 <form id="orderForm" action="form.php" method="POST">
   <div class="form-group">
     <label for="name">Nom et Prénom</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name">
     <span class="error" id="nameError">Ce champ est obligatoire</span>
   </div>
   
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email">
     <span class="error" id="emailError">Ce champ est obligatoire</span>
   </div>
 
 <div class="form-group">
     <label for="phone">Téléphone</label>
-    <input type="tel" id="phone" name="phone" required>
+    <input type="tel" id="phone" name="phone">
     <span class="error" id="phoneError">Ce champ est obligatoire</span>
 </div>
 
 <div class="form-group">
     <label for="adress">Adresse</label>
-    <textarea type="text" id="adress" rows="4" name="adress" required></textarea>
+    <textarea type="text" id="adress" rows="4" name="adress"></textarea>
     <span class=" error" id="adressError">Ce champ est obligatoire</span>
 </div>
 <button class="commande" type="submit">Envoyer</button>
 </form>
-<script src="js/formulaire1.js"></script>
+
+<script src="../js/formulaire1.js"></script>
 
     <!--"""""""""""""""""""""""""""""""""""""""""""contact"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
  
