@@ -43,11 +43,11 @@ include 'php/menu.php';
 <div class="grddi container-fluid pb-2 pt-3">
     <div class="row ">
         <div class=" col d-flex justify-content-around"><a href="php/categorie.php#pizza"><img
-                    src="../assets/images_the_district/pizza_cat.jpg" class="ra" class=" rounded border border-4"
+                    src="../assets/images_the_district/pizza.jpg" class="ra" class=" rounded border border-4"
                     alt="pizza"></a></div>
         <p class="nomdeplat1"><a href="php/categorie.php#pizza">PIZZA</a></p>
         <div class=" col d-flex justify-content-around"><a href="php/categorie.php#hamburger"><img
-                    src="../assets/images_the_district/burger_cat.jpg" class="ra" class="rounded border border-4"
+                    src="../assets/images_the_district/burger.jpg" class="ra" class="rounded border border-4"
                     alt="burger"></a></div>
         <p class="nomdeplat1"><a href="php/categorie.php#hamburger">BURGER</a></p>
         <div class=" col d-flex justify-content-around"><a href="php/categorie.php#sandwich"><img

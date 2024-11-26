@@ -63,4 +63,20 @@ CREATE TABLE `utilisateur` (
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB;
 
+SELECT date_commande, nom_client, telephone_client, email_client, adresse_client, id_plat, total FROM commande;
+SELECT plat.libelle AS nomduplat, categorie.libelle AS categorieplt FROM plat JOIN categorie ON plat.id_categorie = categorie.id;
+SELECT libelle, active FROM categorie WHERE active = 'Yes';
+SELECT plat.libelle, commande.quantite FROM plat JOIN commande ON plat.id = commande.id_plat WHERE commande.etat != 'annulée' ORDER BY commande.quantite DESC;
+SELECT plat.libelle, SUM(commande.quantite * plat.prix) AS ca FROM plat JOIN commande ON plat.id = commande.id_plat WHERE commande.etat != 'annulée' GROUP BY plat.libelle ORDER BY 2 DESC LIMIT 1;
+DELETE FROM plat WHERE active = 'no';
+DELETE FROM commande WHERE etat = 'livrée';
+INSERT INTO categorie (id, libelle, image, active) VALUES ('15', 'SPECIALITE_ALGERIENNE', 'CSCS.jpg','active');
+UPDATE plat SET prix = prix *1.1 WHERE id_categorie = (SELECT id FROM categorie)
+
+
+
+
+
+
+
 
