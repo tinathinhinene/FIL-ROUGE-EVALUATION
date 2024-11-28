@@ -15,7 +15,8 @@ echo '<section class="brdr pb-4">
                                 class="contact"><img src="../assets/images_the_district/tic-tac.png" class="reseaux w-2" alt="logo facebook" width="50px" height="50px"></a></li>
                     </ul>
                 </nav>
-          </section>
+                 </section>
+                 <p>© 2024 mon super site</p>
           </body>
 </html>';
-          ?>
+?>

@@ -1,3 +1,8 @@
+<!--(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((afficher les catégories dynamiquement)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+<?php
+require_once 'dao.php';
+$categorie = get_categorie();
+?>
 <!--''''''''''''''''''''''''''' l'adresse le logo et la barre de nav'''''''''''''''''''''''''''''''''''''''''-->
 
 <?php
@@ -15,43 +20,29 @@ include '../php/menu.php';
     <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
     <div class="container-fluid d-flex justify-content-center">
-        <p class="nomdeplat  p-4 m-4">LES CATEGORIES</p>
+        <h1 class="nomdeplat  p-4 m-4">LES CATEGORIES</h1> 
     </div>
 
+<?php foreach($categorie as $item): ?>
+    <a href="../php/<?=strtolower($item['libelle'])?>plat.php">
+        <div class="fond11 mb-4" style="background-image:url(../assets/images_the_district/<?=$item['image']?>)">
+            <p class="non1 pt-5 mt-5" id="<?=strtolower($item['libelle'])?>"><?=strtoupper($item['libelle'])?></p>
+            <!--
+            <pre style="background-color:white;color:black;"><?php var_dump($item);?></pre>
+            -->
+        </div>
+    </a>
+<?php endforeach;?>
+
+
+
+<!--
     <a href="../php/pizzasplat.php">
         <div class="fond11 mb-4">
             <p class="non1 pt-5 mt-5" id="pizza">PIZZA</p>
         </div>
     </a>
-    <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
-    <a href="../php/burgerplat.php">
-        <div class="fond12 mb-4" id="hamburger">
-            <p class="non1 pt-5 mt-5">HAMBURGER</p>
-        </div>
-    </a>
-    <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
-    <div class="fond13 mb-4" id="asian">
-        <p class="non1 pt-5 mt-5">ASIAN FOOD</p>
-    </div>
-    <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
-    <div class="fond15 mb-4" id="sandwich">
-        <p class="non1 pt-5 mt-5">SANDWICH</p>
-    </div>
-    <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
-    <div class="fond16 mb-4" id="veggie">
-        <p class="non1 pt-5 mt-5">VEGGIE</p>
-    </div>
-    <!--'''''''''''''''''''''''''''''''''''''''''les categories image et titres'''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
-
-    <a href="../php/pastaplat.php">
-        <div class="fond17 " id="pasta">
-            <p class="non1 pt-5 mt-5">PASTA</p>
-        </div>
-    </a>
+-->
 
     <!--'''''''''''''''''''''''''''''''''''''''''les boutons gauche et droite''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 

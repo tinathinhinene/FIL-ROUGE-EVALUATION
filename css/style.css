@@ -321,16 +321,7 @@ text-decoration: none;
 }
 }
 
-
-
-
-
-
-
-
-
-
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&                    PAGE CATEGORIE                         &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& PAGE CATEGORIE &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 .fond11 {
 background-image: url(../assets/images_the_district/Food-Name-8298.jpg);
 background-size: cover;
@@ -475,6 +466,7 @@ border: none;
 cursor: pointer;
 text-align: center;
 }
+
 /**********************************************************contact*************************************************************************/
 #ville, #codepostal{
 
