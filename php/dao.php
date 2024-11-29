@@ -21,3 +21,18 @@ function get_categorie() {
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+function get_active_categorie($limit = 6){
+    function get_active_categories($limit = 6) {
+        $pdo = get_connection(); // Connexion à la base de données
+        $stmt = $pdo->prepare("SELECT * FROM categories WHERE active = 1 LIMIT :limit");
+        $stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+    Si active est une chaîne (VARCHAR), remplace la condition SQL par :
+    
+    $stmt = $pdo->prepare("SELECT * FROM categories WHERE active = 'Yes' LIMIT :limit");
+    
+    
+}

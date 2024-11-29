@@ -91,20 +91,17 @@ translate:2rem;
 
 .cat{width: 33%;}
 
-.nomdeplat a, .telechargement, .telechargement a{
-font-size: 30px;
+.nomdeplat a, .telechargement, .telechargement a, .titcat {
+font-size: 40px;
 font-weight: bolder;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 color: #970747;
 }
-.nomdeplat:hover{
+.nomdeplat:hover, .telechargement:hover, .titcat:hover{
 scale:1.2;
 }
 .nomdeplat1{
 display:none;
-}
-.telechargement:hover{
-scale:1.2;
 }
 
 .tele
@@ -321,78 +318,17 @@ text-decoration: none;
 }
 }
 
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& PAGE CATEGORIE &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& CATEGORIE &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
 .fond11 {
-background-image: url(../assets/images_the_district/Food-Name-8298.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 40%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-
+  height: 500px;
+  width: 100%;
+  border: solid 2px #970747;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.fond12 {
-background-image: url(../assets/images_the_district/hamburger.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 40%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-}
-
-.fond13 {
-background-image: url(../assets/images_the_district/asian_food_cat.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 60%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-}
-
-.fond14 {
-background-image: url(../assets/images_the_district/asian_food_cat.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 70%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-}
-
-.fond15 {
-background-image: url(../assets/images_the_district/sandwich_cat.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 10%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-
-}
-
-.fond16 {
-background-image: url(../assets/images_the_district/salade_cat.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 50%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-}
-.fond17 {
-background-image: url(../assets/images_the_district/pasta_cat.jpg);
-background-size: cover;
-height: 500px;
-width: 100%;
-background-position-y: 50%;
-border: solid 2px #970747;
-background-repeat: no-repeat;
-}
-
+  
 .non1 {
 display: flex;
 justify-content: center;

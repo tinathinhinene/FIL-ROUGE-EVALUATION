@@ -16,7 +16,6 @@ echo '<section class="brdr pb-4">
                     </ul>
                 </nav>
                  </section>
-                 <p>© 2024 mon super site</p>
-          </body>
+                    </body>
 </html>';
 ?>

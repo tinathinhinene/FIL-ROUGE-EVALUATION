@@ -71,7 +71,8 @@ SELECT plat.libelle, SUM(commande.quantite * plat.prix) AS ca FROM plat JOIN com
 DELETE FROM plat WHERE active = 'no';
 DELETE FROM commande WHERE etat = 'livrée';
 INSERT INTO categorie (id, libelle, image, active) VALUES ('15', 'SPECIALITE_ALGERIENNE', 'CSCS.jpg','active');
-UPDATE plat SET prix = prix *1.1 WHERE id_categorie = (SELECT id FROM categorie)
+UPDATE plat SET prix = prix *1.1 WHERE id_categorie = (SELECT id FROM categorie);
+SELECT *FROM categorie WHERE active = 'Yes' LIMIT 6;
 
 
 
