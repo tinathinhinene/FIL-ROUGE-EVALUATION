@@ -73,11 +73,22 @@ DELETE FROM commande WHERE etat = 'livrée';
 INSERT INTO categorie (id, libelle, image, active) VALUES ('15', 'SPECIALITE_ALGERIENNE', 'CSCS.jpg','active');
 UPDATE plat SET prix = prix *1.1 WHERE id_categorie = (SELECT id FROM categorie);
 SELECT *FROM categorie WHERE active = 'Yes' LIMIT 6;
-
-
-
-
-
+ALTER TABLE plat ADD COLUMN IF NOT EXISTS slug VARCHAR(255);
+UPDATE  plat SET slug = 'districtburger' WHERE libelle = 'District Burger';
+UPDATE  plat SET slug = 'pizzasaumon' WHERE libelle = 'PIZZA SAUMON';
+UPDATE  plat SET slug = 'buffalochikenwrap' WHERE libelle = 'Buffalo Chicken Wrap';
+UPDATE  plat SET slug = 'cheeseburger' WHERE libelle = 'Cheeseburger';
+UPDATE  plat SET slug = 'patesbrocolicarbo' WHERE libelle = 'pates brocoli carbo';
+UPDATE  plat SET slug = 'spaghettiauxlegumes' WHERE libelle = 'Spaghetti aux légumes';
+UPDATE  plat SET slug = 'saladecesar' WHERE libelle = 'Salade César';
+UPDATE  plat SET slug = 'pizzamargherita' WHERE libelle = 'Pizza Margherita';
+UPDATE  plat SET slug = 'courgettesfarcies' WHERE libelle = 'Courgettes farcies';
+UPDATE  plat SET slug = 'lasagnes' WHERE libelle = 'Lasagnes';
+UPDATE  plat SET slug = 'tagliatellesausaumon' WHERE libelle = 'Tagliatelles au saumon';
+UPDATE  plat SET slug = 'pizzahawaienne' WHERE libelle = 'pizza hawaienne';
+UPDATE  plat SET slug = 'pizzaquatresfromages' WHERE libelle = 'pizza quatres fromages';
+UPDATE  plat SET slug = 'burgerauboeuffaçonitalienne' WHERE libelle = 'burger au boeuf façon italienne';
+UPDATE  plat SET slug = 'burgerdeboeufaufromage' WHERE libelle = 'Burger de bœuf au fromage';
 
 
 

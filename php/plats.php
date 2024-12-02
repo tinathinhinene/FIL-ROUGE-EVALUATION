@@ -1,3 +1,8 @@
+<!--(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((afficher les plats dynamiquement)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))-->
+<?php 
+require_once 'dao.php';
+$plat = get_plat();
+?>
 
 <?php include 'menu.php';?>
 
@@ -13,53 +18,29 @@
   <!--""""""""""""""""""""""""""""""""""""""""""titre"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
 
     <div class="container-fluid d-flex justify-content-center">
-        <p class="nomdeplat  p-4 m-4">TOUT NOS PLATS</p></div>
+        <p class="plattitre  p-4 m-4">TOUT NOS PLATS</p></div>
 
-<!--""""""""""""""""""""""""""""""""""""""""""carde pizza margarita"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
-
-        <div class="pizzacont container  p-2">
-            <div class=" pizzacc card m-0 p-0">
-            <img class="pizzac card-img-top" src="../assets/images_the_district/menu-pizza.jpg"    alt="card image"></div>
+<!--""""""""""""""""""""""""""""""""""""""""""card plat"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+<?php foreach ($plat as $plt): ?>
+        <div class="pizzacont container mb-4  p-2">
+                       <div class=" pizzacc card m-0 p-0">
+            <img class="pizzac card-img-top" src="../assets/images_the_district/<?php echo $plt['image']; ?>"    alt="card image"></div>
         <div class="pizzatext card-body ms-5 mt-0 p-5">
-            <h4 class="hawa card-title m-0 pb-3">PIZZA margarita</h4>
-            <P CLASS="ctext card-text mt-2 pb-2"> une recette  de cuisine traditionnelle de la cuisine italienne, originaire de Naples à  base de galette de pâte à pain, garnie principalement d'huile d'olive,  de sauce tomate, de mozzarella et d'autres ingrédients et cuite au four.La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est garnie de tomates, de mozzarella, de basilic frais, de sel et d'huile d'olive. La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est garnie de tomates
-            </P>
-           <a href="pizzamargaritacommande.php" class="command btn m-3">COMMANDER</a>       
+            <h4 class="hawa card-title mt-4 pb-3"><?php echo $plt['libelle'] ?></h4>
+            <P class="ctext card-text mt-2 pb-2"><?php echo $plt['description'] ?></P>
+            <p class="card-text"><strong>prix :</strong> <?php echo $plt['prix'] ?>€</p>
+           <a class="command btn m-3" href="../php/<?= $plt['slug'] ?>.php">COMMANDER</a>       
         </div>
-        </div>
-<!--""""""""""""""""""""""""""""""""""""""""""card WRAPES mexicaines""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+             </div>
+        <?php endforeach; ?>
 
-        <div class="pizzacont container mt-4 p-2">
-            <div class=" pizzacc card m-0 p-0">
-            <img class="pizzac card-img-top" src="../assets/images_the_district/wrap_cat.jpg"    alt="card image" width="380px" height="380px"></div>
-        <div class="pizzatext card-body ms-5 mt-0 p-5">
-            <h4 class="hawa card-title m-0 pb-3">WRAPES mexicaines</h4>
-            <P CLASS="ctext card-text mt-2 pb-2">Wrap d’aiguillettes de poulet au curry, salsa de poivrons rouges à la coriandre. IL Y A ÉGALEMENT DES Wrap d’émincé de bœuf aux légumes grillés, crème de fromage blanc aux oignons rouges.</P>
-           <a href="#" class="command btn m-3">COMMANDER</a>       
-        </div>
-        </div>
-  <!--""""""""""""""""""""""""""""""""""""""""""card LASAGNES""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+<!--'''''''''''''''''''''''''''''''''''''''''les boutons gauche et droite''''''''''''''''''''''''''''''''''''''''''''''''''''''-->
 
-        <div class="pizzacont container  mt-4 p-2">
-            <div class=" pizzacc card m-0 p-0">
-            <img class="pizzac card-img-top" src="../assets/images_the_district/lasagnes_viande.jpg"   alt="card image"></div>
-        <div class="pizzatext card-body ms-5 mt-0 p-5">
-            <h4 class="hawa card-title m-0 pb-3">LASAGNES</h4>
-            <P CLASS="ctext card-text mt-2 pb-2"> recette de cuisine italienne à base de couches alternées de pâtes lasagnes, parmesan,  mozzarella, ou ricotta, et de sauce bolognaise ou sauce béchamel, gratinée au four. Originaires du centre-sud italien</P>
-           <a href="#" class="command btn m-3">COMMANDER</a>       
-        </div>
-        </div>
-  <!--""""""""""""""""""""""""""""""""""""""""""card COURGETTES FARCIES""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
-
-        <div class="pizzacont container mt-4  p-2">
-            <div class=" pizzacc card m-0 p-0">
-            <img class="pizzac card-img-top" src="../assets/images_the_district/courgettes_farcies.jpg"    alt="card image"></div>
-        <div class="pizzatext card-body ms-5 mt-0 p-5">
-            <h4 class="hawa card-title m-0 pb-3">COURGETTES FARCIES</h4>
-            <P CLASS="ctext card-text mt-2 pb-2">Les farcis ou petits farcis sont une spécialité culinaire traditionnelle de la cuisine du bassin méditerranéen et plus particulièrement de la cuisine provençale. La courgette farcie en fait partie tout comme les tomates, aubergines, poivrons</P>
-           <a href="#" class="command btn m-3">COMMANDER</a>       
-        </div>
-        </div>
-
+<div class="container-fluid d-flex justify-content-around p-4">
+    <a href="../index.php"> <img src="../assets/images_the_district/gauche.png" alt="bouton gauche" height="70px" ,
+            width="70px"> </a>
+    <a href="../php/pizzaplat.php"> <img src="../assets/images_the_district/envoyer.png" alt="bouton droite"
+            height="70px" , width="70px"></a>
+</div>
   <!--""""""""""""""""""""""""""""""""""""""""""contact""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
   <?php include 'footer.php' ;?> 

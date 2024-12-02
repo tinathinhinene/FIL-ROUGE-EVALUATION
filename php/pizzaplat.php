@@ -35,7 +35,7 @@ include 'menu.php';
             Italie7, si bien que seule existe initialement la pizza bianca (« pizza blanche »), pâte aplatie et
             agrémentée de « choses diverses » (huile ou saindoux, herbes) qui est devenue un mets plébéien. Il a une
         </P>
-        <a href="#" class="command btn m-3">COMMANDER</a>
+        <a href="../php/<?= $plt['slug'] ?>.php" class="command btn m-3">COMMANDER</a>
     </div>
 </div>
 <!--''''''''''''''''''''''''''''''''''''''''''''''''card pizza margarita"""""""""""""""""""""""""""""""""""""""""-->
