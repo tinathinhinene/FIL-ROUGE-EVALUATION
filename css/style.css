@@ -1,3 +1,6 @@
+body {
+  cursor: url("../assets/images_the_district/fourchette.png"), auto;
+}
 /*''''''''''''''''''''''''' page d'accueil ou l'index''''''''''''''''''''''''''''*/
 a{ text-decoration: none;
    

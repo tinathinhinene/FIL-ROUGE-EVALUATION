@@ -39,3 +39,25 @@ $stmt = $pdo->prepare("SELECT * FROM plat WHERE active ='Yes'");
 $stmt->execute();
 return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+/*(((((((((((((((((((((((((page 6plats)))))))))))))))*/
+function get_plat6($limit=6){
+    $pdo = get_connection();
+    $stmt = $pdo->prepare("SELECT*FROM plat LIMIT :limit");
+$stmt->bindValue(':limit', $limit, PDO::PARAM_INT);
+$stmt->execute();
+return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+/*(((((((((((((((((((((((((((page php pour chaque plat)))))))))))))))))))))))))))*/
+function get_plat_by_categorie_name($categorie_name)
+{
+    $pdo = get_connection();
+    $stmt = $pdo->prepare("SELECT p.*
+        FROM plat p
+        INNER JOIN categorie c ON p.id_categorie = c.id_categorie
+        WHERE c.libelle = :categorie_name AND p.active = 'Yes'
+        -- WHERE c.libelle LIKE %:categorie_name% AND p.active = 'Yes'
+    ");
+    $stmt->bindValue(':categorie_name', $categorie_name, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}

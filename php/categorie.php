@@ -29,6 +29,7 @@ include '../php/menu.php';
 <!-- ((((((((((((((((((((((((((((((((((((((((((((((((((((les categories))))))))))))))))))))))))))))))))))))))))))))))))))))))-->
 
 <?php foreach ($categorie as $item): ?>
+    
     <a href="../php/<?= strtolower($item['libelle']) ?>plat.php">
         <div class="fond11" style="background-image:url(../assets/images_the_district/<?= $item['image'] ?>)">
             <p class="non1 pt-5 mt-5" id="<?= strtolower($item['libelle']) ?>"><?= strtoupper($item['libelle']) ?></p>
@@ -37,6 +38,7 @@ include '../php/menu.php';
             -->
         </div>
     </a>
+    
 <?php endforeach; ?>
 
 <!--'''''''''''''''''''''''''''''''''''''''''les boutons gauche et droite''''''''''''''''''''''''''''''''''''''''''''''''''''''-->

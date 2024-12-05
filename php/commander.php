@@ -1,27 +1,37 @@
--------"""""""""""""""""""""""""""""""""""""""adresse logo menu"""""""""""""""""""""""""""""""""""""""""""""-->
+
+<?php
+try {
+    $pdo = new PDO('mysql:host=localhost;dbname=restaurantd_db;charset=utf8', 'tina', 'airo_2024_tciv');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die('erreur de connexion à la base de données : ' .$e->getMessage()); 
+} 
+$platt = null;
+if (isset($_POST['id'])) {
+    $id=intval($_POST['id']);
+$stmt = $pdo->prepare("SELECT * FROM plat WHERE id = :id");
+$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+if ($stmt->execute()) {
+$platt = $stmt->fetch(PDO::FETCH_ASSOC);
+}
+}
+?>
+<!-------"""""""""""""""""""""""""""""""""""""""adresse logo menu"""""""""""""""""""""""""""""""""""""""""""""-->
   
 <?php include 'menu.php';?>
 
-<!--"""""""""""""""""""""""""""""""""""""""""card pizza margarita"""""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
-
-    <div class="pizzacont container  p-2">
-        <div class=" pizzacc card m-0 p-0">
-            <img class="pizzac card-img-top" src="../assets/images_the_district/menu-pizza.jpg" alt="card image">
+<!--"""""""""""""""""""""""""""""""""""""""""card """""""""""""""""""""""""""""""""""""""""""""""""""""""""-->
+    <div class="pizzacont container mt-5  p-2">
+    <div class=" pizzacc card m-0 p-0">
+            <img class="pizzac card-img-top" src="../assets/images_the_district/<?= htmlspecialchars($platt['image']) ?>" alt="card image">
         </div>
         <div class="pizzatext card-body ms-3 mt-4 p-5">
-            <h4 class="hawa card-title m-2 pt-4 pb-3">PIZZA  MARGARITA</h4>
-            <P CLASS="ctext card-text mt-2 pb-2"> une recette de cuisine traditionnelle de la cuisine italienne,
-                originaire de Naples à base de galette de pâte à pain, garnie principalement d'huile d'olive, de sauce
-                tomate, de mozzarella et d'autres ingrédients et cuite au four.La pizza margherita est une spécialité
-                culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza napoletana est
-                garnie de tomates, de mozzarella, de basilic frais, de sel et d'huile d'olive. La pizza margherita est
-                une spécialité culinaire traditionnelle de la ville de Naples, en Italie. Très populaire, cette pizza
-                napoletana est garnie de tomates
-            </P>
-   
+            <h4 class="hawa mt-5 card-title ="><?= htmlspecialchars($platt['libelle']) ?></h4>
+            <P CLASS="ctext card-text "><?= htmlspecialchars($platt['description']) ?></P>
+            <p> Prix : <?= htmlspecialchars($platt['prix']) ?></p>
             <!--------""""""""""""""""""""""""""""""""bouton quantité"""""""""""""""""""""""""""""""""""""""""""""""""""-->
             <div class="container  mt-3">
-                <h5 class="qte pt-2 pb-4">QUANTITÉ  <button type="button" class="btn p-4"><span class= "ti badge  p-4">2</span></button></h5>
+                <h5 class="qte pt-2 pb-4">QUANTITÉ  <button type="button" class="btn p-2"><span class= "ti badge  p-3">2</span></button></h5>
             </div>
         </div>
     </div>
@@ -51,7 +61,7 @@
     <textarea type="text" id="adress" rows="4" name="adress"></textarea>
     <span class=" error" id="adressError">Ce champ est obligatoire</span>
 </div>
-<button class="commande" type="submit">Envoyer</button>
+<button class="commande pb-2" type="submit">Envoyer</button>
 </form>
 
 <script src="../js/formulaire1.js"></script>
